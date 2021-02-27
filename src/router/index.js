@@ -9,6 +9,8 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
+    // 子路由
+    childer: [],
   },
   {
     path: '/about',
