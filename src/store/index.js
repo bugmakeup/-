@@ -9,9 +9,7 @@ export default new Vuex.Store({
     // 用于切换菜单的闭合状态,false表示不闭合
     collapsed: false,
     // 用户信息
-    user: {
-      username: getUserCookie(),
-    },
+    user: getUserCookie(),
   },
   mutations: {
     // 点击菜单改变收缩状态
@@ -21,6 +19,7 @@ export default new Vuex.Store({
     // 改变用户状态的方法
     setUserInfo(state, userInfo) {
       state.user = userInfo;
+      setCookie(userInfo);
     },
     // 退出置为空
     logout(state) {

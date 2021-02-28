@@ -20,6 +20,15 @@ export function getUserCookie() {
     email: Cookies.get('email'),
   };
 }
+//
+export function setUserCookie({
+  username, appkey, role, email,
+}) {
+  Cookies.set('username', username);
+  Cookies.set('appkey', appkey);
+  Cookies.set('role', role);
+  Cookies.set('email', email);
+}
 
 // 移除cookie信息
 export function removeUserCookie() {

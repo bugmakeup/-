@@ -54,8 +54,8 @@ export default {
     };
     return {
       loginForm: {
-        password: '',
-        email: '',
+        password: 'jssbDBXZFQ1024.',
+        email: '1158404614@qq.com',
       },
       rules: {
         password: [{ validator: validatePass, trigger: 'change' }],
@@ -84,7 +84,7 @@ export default {
           });
           return true;
         }
-        console.log('error submit!!');
+        // console.log('error submit!!');
         return false;
       });
     },
