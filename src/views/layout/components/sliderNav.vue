@@ -14,7 +14,7 @@
       </a-breadcrumb>
     </div>
     <ul class="user-info">
-      <li>欢迎xiaoming<a-icon type="down" /></li>
+      <li>欢迎<a-icon type="down" /></li>
       <li>退出</li>
     </ul>
   </div>
