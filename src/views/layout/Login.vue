@@ -74,7 +74,7 @@ export default {
         if (valid) {
           api.login(this.loginForm).then((res) => {
             // 邮箱密码正确后要跳转页面
-            console.log(res);
+            this.$store.dispatch('setUserInfo', res);
             this.$router.push({
               name: 'Home',
             });

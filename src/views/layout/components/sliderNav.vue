@@ -14,7 +14,9 @@
       </a-breadcrumb>
     </div>
     <ul class="user-info">
-      <li>欢迎<a-icon type="down" /></li>
+      <li class="user-name">
+        {{ $store.state.user.username }} <a-icon type="down" />
+      </li>
       <li>退出</li>
     </ul>
   </div>
@@ -22,8 +24,7 @@
 <script>
 export default {
   data() {
-    return {
-    };
+    return {};
   },
   methods: {
     toggleCollapsed() {
