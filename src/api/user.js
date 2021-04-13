@@ -3,6 +3,7 @@ import axios from '@/axios';
 
 export default {
   login(params) {
+    // params是传递过来的信息
     return axios.post('/passport/login', params);
   },
 };

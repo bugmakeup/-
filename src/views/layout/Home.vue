@@ -1,8 +1,9 @@
 <template>
   <div class="home">
-    <left-menu />
+    <left-menu :key="key"></left-menu>
     <div :class="{ 'main-app': true, 'menu-unfold': $store.state.collapsed }">
       <slider-nav />
+      <!-- 右侧路由渲染 -->
       <router-view></router-view>
     </div>
   </div>
@@ -16,7 +17,13 @@ export default {
   data() {
     return {
       collapsed: false,
+      key: new Date().getTime(),
     };
+  },
+  watch: {
+    $route() {
+      this.key = new Date().getTime();
+    },
   },
   components: {
     LeftMenu,

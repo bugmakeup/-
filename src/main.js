@@ -1,11 +1,12 @@
 import Vue from 'vue';
+import VCharts from 'v-charts';
 import App from './App.vue';
 import router from './router';
 import store from './store';
 import './plugins/ant-design-vue';
-// 重置样式放到主入口
-import '@/assets/css/reset.less';
+import './assets/css/reset.css';
 
+Vue.use(VCharts);
 Vue.config.productionTip = false;
 
 new Vue({
