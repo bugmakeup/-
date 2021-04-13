@@ -58,8 +58,8 @@ export default {
     };
     return {
       loginForm: {
-        password: 'jssbDBXZFQ1024.',
-        email: '1158404614@qq.com',
+        password: '',
+        email: '',
       },
       rules: {
         // 校验规则，当修改时就会校验
